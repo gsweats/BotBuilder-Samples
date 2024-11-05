@@ -17,10 +17,18 @@ const webChatAdapter = new WebChatAdapter();
 
 // Connect our BotFramework-WebChat instance with the DOM.
 
+// renderWebChat(
+//     {
+//         directLine: webChatAdapter.botConnection
+//     },
+//     document.getElementById('webchat')
+// );
+
 renderWebChat({
-    directLine: webChatAdapter.botConnection
-}, document.getElementById('webchat')
+        directLine: webChatAdapter.botConnection
+    }, document.getElementById('webchat')
 );
+
 // Instantiate MemoryStorage for use with the ConversationState class.
 const memory = new MemoryStorage();
 
